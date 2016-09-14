@@ -6,14 +6,14 @@ int value;
 int rollTimes = 1;
 void setup()
 {
-	size(1200,1000);
+	size(1200,900);
 	noLoop();
 }
 void draw()
 {
 	background(127);
 	for(int x=0; x<1200; x=x+14)
-	{	for(int y=850; y>0; y=y-14)
+	{	for(int y=800; y>0; y=y-14)
 			{
 			Die tommy = new Die(x,y);
 			tommy.show();
@@ -24,10 +24,10 @@ void draw()
 			}
 	}
 	fill(0);
-	textSize(40);
+	textSize(30);
 	textAlign(CENTER);
-	text("Total: "+total,500,900);
-	text("Average: "+average,500,950);
+	text("Total: "+total,600,850);
+	text("Average: "+average,600,880);
 }
 void mousePressed()
 {
